@@ -1,12 +1,9 @@
 language: objective-c
 sudo: required
 osx_image: xcode9.4
-rvm:
-- 2.2        #see before_install for getting RVM stable.
 
 
 before_install:
-- rvm ruby-2.2.10 do rvm gemset create
 - chmod a+x ./Scripts/install.sh
 - chmod a+x ./Scripts/build.sh
 - chmod a+x ./Scripts/export-unity-package.sh
