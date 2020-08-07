@@ -13,19 +13,6 @@ install:
 
 script:
 - ./Scripts/build.sh
+- ./Scripts/runtests.sh
 
-before_deploy:
-- DEPLOY_UNITYPACKAGE="$(ls -a release/*.zip | head -n 1)"
 
-deploy:
-    provider: releases
-    api_key: $GITHUB_TOKEN
-    file: $DEPLOY_UNITYPACKAGE
-    skip_cleanup: true
-    overwrite: true
-    on:
-<<<<<<< HEAD
-    tags: true
-=======
-    tags: true 
->>>>>>> 764276b6c8068030020b256a711f6534f2441bf0
