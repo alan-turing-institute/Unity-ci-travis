@@ -3,6 +3,10 @@ sudo: required
 osx_image: xcode9.4
 
 
+env:
+    global:
+      - UNITY_PROJECT_DIR=/Users/travis/build/alan-turing-institute/Unity-ci-travis/
+
 before_install:
 - chmod a+x ./Scripts/install.sh
 - chmod a+x ./Scripts/build.sh
